@@ -1,33 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio personal de Patricio Sosa - Desarrollador en formación">
+    <meta name="keywords" content="portfolio, desarrollo web, HTML, CSS, JavaScript, JAP">
+    <meta name="author" content="Patricio Sosa">
     <link rel="stylesheet" href="estilos.css" type="text/css">
-    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Portfolio - Patricio Sosa</title>
 </head>
 <body>
-  <div class="codigo">
-   <header>
-      <h1 id="Titulo"> Mi portfolio </h1>
-        <img class="imagen" src="C:\Users\patri\OneDrive\Escritorio\Jap\Semana 3\Tarea 3.3\Imagen.png">
-   </header> 
-    <h2 class="SubTitulo">Presentación</h2>
-      <p class="texto">Mi nombre es Patricio Sosa,actualmente estoy cursando Jovenes a programar en el nivel 1 fase 2, tengo 
-                      conocimientos de Programación basicos gracias a haber cursado la carrera de Ingenieria en Computación en la UDELAR,
-                        y tengo conocimientos de HTML y CSS gracias a estar cursando Jovenes a Programar.</p>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#inicio">PS</a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#inicio" class="nav-link">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#presentacion" class="nav-link">Presentación</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#estudios" class="nav-link">Estudios</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contacto" class="nav-link">Contacto</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
 
-   <h2 class="SubTitulo">Estudios</h2>
-     <ul class="lista">
-        <li class="texto">Liceo Numero 1 de Rocha Fisico-Matematico</li>
-        <li class="texto">Calculo 1 y GAL 1 en carrera ingenieria en computacion UDELAR </li>
-        <li class="texto">Cursando JAP</li>
-     </ul>
-     <footer id="base">
-        <h3 class="UltimoTitulo">Contacto</h3>
-        <p> <a class="texto" href="#Inicio">Inicio</a></p>
-        <p> <a class="texto" href="https://x.com/patriciososa120" target="_blank">Twitter</a></p>
-        <p> <a class="texto" href="https://github.com/Pato-12" target="_blank">GitHub</a></p>
-     </footer>
-  </div>
+    <div class="container" id="inicio">
+        <header class="hero">
+            <h1 class="hero-title">Mi Portfolio</h1>
+            <img class="hero-image" src="Imagen.png" alt="Foto de Patricio Sosa">
+        </header>
+
+        <section class="section" id="presentacion">
+            <h2 class="section-title">Presentación</h2>
+            <div class="section-content">
+                <p class="text-content">Mi nombre es Patricio Sosa, actualmente estoy cursando Jóvenes a Programar en el nivel 1 fase 2. Tengo conocimientos de Programación básicos gracias a haber cursado la carrera de Ingeniería en Computación en la UDELAR, y tengo conocimientos de HTML y CSS gracias a estar cursando Jóvenes a Programar.</p>
+            </div>
+        </section>
+
+        <section class="section" id="estudios">
+            <h2 class="section-title">Estudios</h2>
+            <div class="section-content">
+                <ul class="studies-list">
+                    <li class="study-item">Liceo Número 1 de Rocha Físico-Matemático</li>
+                    <li class="study-item">Cálculo 1 y GAL 1 en carrera Ingeniería en Computación UDELAR</li>
+                    <li class="study-item">Cursando JAP (Jóvenes a Programar)</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer class="footer" id="contacto">
+            <h3 class="footer-title">Contacto</h3>
+            <div class="social-links">
+                <a href="#inicio" class="social-link">
+                    <i class="fas fa-home"></i>
+                    Inicio
+                </a>
+                <a href="https://x.com/patriciososa120" target="_blank" class="social-link">
+                    <i class="fab fa-twitter"></i>
+                    Twitter
+                </a>
+                <a href="https://github.com/Pato-12" target="_blank" class="social-link">
+                    <i class="fab fa-github"></i>
+                    GitHub
+                </a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
